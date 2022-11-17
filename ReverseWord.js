@@ -1,7 +1,8 @@
-""""Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained."""
+/*Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained."""
+Without build it reverse function
+*/
 
-
-
+//first method
 function reverseWords(str){
     let final = []
     arr1 = str.split(" ");
@@ -15,4 +16,14 @@ function reverseWords(str){
     }
     return final.join(" ")
    
+}
+
+//other method
+function reverseWords(str){
+    let empty = [];
+    let arr = str.split("");
+    for(let i = 0; i < arr.length; i++){
+        empty.unshift(arr[i])
+    }
+    return empty.join("");
 }
