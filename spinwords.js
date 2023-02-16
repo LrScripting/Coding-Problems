@@ -29,3 +29,13 @@ function spinWords(string){
     }
     return array.join(' ')
   }
+
+#2nd attempt in python
+
+def spinWords(words):
+    return " ".join(list(map(lambda x: x[::-1], words.split())))
+    
+    
+    
+    
+    
